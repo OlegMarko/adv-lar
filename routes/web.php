@@ -15,8 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('form', 'FormController@index')->name('form');
-Route::post('form', 'FormController@submit');
+Route::get('/form', 'FormController@index')->name('form');
+Route::post('/form', 'FormController@submit');
+
+Route::get('/re-captcha', 'ReCaptchaController@index')->name('re-captcha');
+Route::post('/re-captcha', 'ReCaptchaController@submit');
 
 Auth::routes();
 
