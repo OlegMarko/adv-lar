@@ -85,6 +85,7 @@
                 <div class="links">
                     <a href="{{ url('form') }}">Form Validation</a>
                     <a href="{{ url('re-captcha') }}">reCAPTCHA</a>
+                    <a href="{{ url('algolia') }}">Algolia Search</a>
                 </div>
             </div>
         </div>

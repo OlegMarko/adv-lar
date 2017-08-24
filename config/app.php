@@ -180,6 +180,9 @@ return [
         // Invisible reCaptcha
         AlbertCht\InvisibleReCaptcha\InvisibleReCaptchaServiceProvider::class,
 
+        // Laravel Scout
+        Laravel\Scout\ScoutServiceProvider::class,
+
     ],
 
     /*

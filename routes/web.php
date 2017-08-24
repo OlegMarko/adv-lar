@@ -21,6 +21,9 @@ Route::post('/form', 'FormController@submit');
 Route::get('/re-captcha', 'ReCaptchaController@index')->name('re-captcha');
 Route::post('/re-captcha', 'ReCaptchaController@submit');
 
+Route::get('/algolia', 'AlgoliaController@index');
+Route::post('/algolia', 'AlgoliaController@search');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
