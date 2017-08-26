@@ -86,6 +86,7 @@
                     <a href="{{ url('form') }}">Form Validation</a>
                     <a href="{{ url('re-captcha') }}">reCAPTCHA</a>
                     <a href="{{ url('algolia') }}">Algolia Search</a>
+                    <a href="{{ url('locale') }}">Localization</a>
                 </div>
             </div>
         </div>

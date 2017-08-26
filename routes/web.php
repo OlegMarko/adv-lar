@@ -24,6 +24,9 @@ Route::post('/re-captcha', 'ReCaptchaController@submit');
 Route::get('/algolia', 'AlgoliaController@index');
 Route::post('/algolia', 'AlgoliaController@search');
 
+Route::get('/locale', 'LocalizationController@index');
+Route::get('/set-locale/{lang?}', 'LocalizationController@setLocale');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
