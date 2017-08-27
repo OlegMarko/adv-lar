@@ -27,6 +27,9 @@ Route::post('/algolia', 'AlgoliaController@search');
 Route::get('/locale', 'LocalizationController@index');
 Route::get('/set-locale/{lang?}', 'LocalizationController@setLocale');
 
+Route::get('/artisan-command', 'ArtisanCommandController@index');
+Route::get('/artisan-command/run/{command}/{params?}', 'ArtisanCommandController@runCommand');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

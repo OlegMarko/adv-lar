@@ -87,6 +87,7 @@
                     <a href="{{ url('re-captcha') }}">reCAPTCHA</a>
                     <a href="{{ url('algolia') }}">Algolia Search</a>
                     <a href="{{ url('locale') }}">Localization</a>
+                    <a href="{{ url('artisan-command') }}">Artisan Command</a>
                 </div>
             </div>
         </div>
