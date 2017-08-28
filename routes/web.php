@@ -33,6 +33,9 @@ Route::get('/artisan-command/run/{command}/{params?}', 'ArtisanCommandController
 Route::get('/queue', 'QueueController@index');
 Route::get('/queue/run', 'QueueController@run');
 
+Route::get('/event', 'EventController@index');
+Route::get('/event/run', 'EventController@run');
+
 Route::get('/send-mail', 'MailController@sendMail');
 
 Auth::routes();

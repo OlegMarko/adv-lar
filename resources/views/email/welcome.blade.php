@@ -80,6 +80,14 @@
     <div class="content">
         <div class="title m-b-md">
             Welcome to Laravel
+            <hr>
+            @if(isset($content))
+                <div class="content">
+                    <div class="title m-b-md">
+                        {!! $content !!}
+                    </div>
+                </div>
+            @endif
         </div>
     </div>
 </div>
