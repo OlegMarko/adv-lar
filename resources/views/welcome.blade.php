@@ -88,6 +88,7 @@
                     <a href="{{ url('algolia') }}">Algolia Search</a>
                     <a href="{{ url('locale') }}">Localization</a>
                     <a href="{{ url('artisan-command') }}">Artisan Command</a>
+                    <a href="{{ url('queue') }}">Queue</a>
                 </div>
             </div>
         </div>
