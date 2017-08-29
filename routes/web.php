@@ -35,6 +35,7 @@ Route::get('/queue/run', 'QueueController@run');
 
 Route::get('/event', 'EventController@index');
 Route::get('/event/run', 'EventController@run');
+Route::get('/event/listen', 'EventController@listen');
 
 Route::get('/send-mail', 'MailController@sendMail');
 
