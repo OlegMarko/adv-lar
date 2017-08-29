@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Policies\SubscribePolicy;
+use App\User;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
@@ -14,6 +16,7 @@ class AuthServiceProvider extends ServiceProvider
      */
     protected $policies = [
         'App\Model' => 'App\Policies\ModelPolicy',
+        User::class => SubscribePolicy::class,
     ];
 
     /**
@@ -25,6 +28,10 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        Gate::define('subscribe-only', 'App\Policies\SubscribePolicy@subscribeOnly');
+
+//        Gate::resource('post', 'PostPolicy', [
+//            'post.premium' => 'updatePhoto'
+//        ]);
     }
 }
