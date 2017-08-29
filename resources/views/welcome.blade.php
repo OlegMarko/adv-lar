@@ -89,7 +89,9 @@
                     <a href="{{ url('locale') }}">Localization</a>
                     <a href="{{ url('artisan-command') }}">Artisan Command</a>
                     <a href="{{ url('queue') }}">Queue</a>
-                    <a href="{{ url('event') }}">Event & Listener</a>
+                    <br>
+                    <br>
+                    <a href="{{ url('event') }}">Event & Listener & Broadcast & Pusher &Laravel Echo</a>
                 </div>
             </div>
         </div>

@@ -38,4 +38,9 @@ class EventController extends Controller
 
         return back();
     }
+
+    public function listen()
+    {
+        return view('broadcast');
+    }
 }

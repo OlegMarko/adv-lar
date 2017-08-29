@@ -9,5 +9,6 @@
 
     <div class="col-sm-offset-2 col-sm-8">
         <a href="{{ url('/event/run') }}" class="btn btn-primary">Run event</a>
+        <a href="{{ url('/event/listen') }}" class="btn btn-info">Listen event</a>
     </div>
 @endsection

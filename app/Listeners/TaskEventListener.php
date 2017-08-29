@@ -28,12 +28,12 @@ class TaskEventListener
      */
     public function handle(TaskEvent $event)
     {
-        Mail::to($event->email)->send(
-            new SendEmailMailable(
-                $event->message
-            )
-        );
-
-        return $event;
+//        Mail::to($event->email)->send(
+//            new SendEmailMailable(
+//                $event->message
+//            )
+//        );
+//
+//        return $event;
     }
 }
