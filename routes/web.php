@@ -37,6 +37,11 @@ Route::get('/event', 'EventController@index');
 Route::get('/event/run', 'EventController@run');
 Route::get('/event/listen', 'EventController@listen');
 
+Route::get('/gates', 'GatesController@index');
+Route::get('/gates/test', 'GatesController@test');
+Route::get('/gates/subscribe', 'GatesController@subscribe')->middleware('auth');
+Route::get('/gates/un-subscribe', 'GatesController@unSubscribe')->middleware('auth');
+
 Route::get('/send-mail', 'MailController@sendMail');
 
 Auth::routes();

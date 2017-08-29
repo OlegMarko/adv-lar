@@ -92,6 +92,9 @@
                     <br>
                     <br>
                     <a href="{{ url('event') }}">Event & Listener & Broadcast & Pusher &Laravel Echo</a>
+                    <br>
+                    <br>
+                    <a href="{{ url('gates') }}">Gates</a>
                 </div>
             </div>
         </div>
